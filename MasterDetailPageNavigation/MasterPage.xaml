@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="MasterDetailPageNavigation.MasterPage"
+		
+			 Icon="hamburger.png"
+             BackgroundColor="#f3f5f7"
+			 Title="Personal Organiser">
+    <StackLayout>
+        <Label Text="Forms" TextColor="White" BackgroundColor="#2a3f54"></Label>
+        
+      <!--  <StackLayout Orientation="Horizontal">
+            <Image Source="Resources/drawable/myforms.png"></Image>
+            <Label Text="My Forms" TextColor="#424242"></Label>                         
+        </StackLayout> -->
+
+          <StackLayout Orientation="Horizontal">
+            <Image x:Name="xaml_imgFrm1" Source="Resources/drawable/myforms.png" WidthRequest="20" HeightRequest="20">
+            </Image>
+              
+            <Label Text="My Forms" x:Name="xaml_txtFrm" TextColor="#424242"></Label>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Image x:Name="xaml_imgCrtFrm" Source="Resources/drawable/createform.png" WidthRequest="20" HeightRequest="20"></Image>
+            <Label x:Name="xaml_txtCrtFrm" Text="Ceate New Offline Form" TextColor="#424242"></Label>
+        </StackLayout>
+     
+        <Label Text="Data" TextColor="White" BackgroundColor="#2a3f54"></Label>
+
+        <StackLayout Orientation="Horizontal">
+            <Image x:Name = "xaml_imgViewFrmSub" Source="Resources/drawable/view.png" WidthRequest="20" HeightRequest="20" ></Image>
+            <Label x:Name="xaml_txtViewFrmSub" Text="View Form Submissions" TextColor="#424242"></Label>
+        </StackLayout>
+
+
+        <StackLayout Orientation="Horizontal">
+            <Image x:Name="xaml_imgViewFrmAb" Source="Resources/drawable/formAbandon.png" WidthRequest="20" HeightRequest="20" ></Image>
+            <Label x:Name="xaml_TxtViewFrmAb" Text="View Form Abandonments" TextColor="#424242"></Label>
+        </StackLayout>
+          
+        <Label Text="Analytics" TextColor="White" BackgroundColor="#2a3f54"></Label>
+
+        <StackLayout Orientation="Horizontal">
+            <Image x:Name="xaml_imgAnal" Source="Resources/drawable/analytics.png" WidthRequest="20"
+                HeightRequest="20"></Image>
+            <Label x:Name="xaml_txtAnal" Text="View Analytics" TextColor="#424242"></Label>
+        </StackLayout>
+ 
+        <Label Text="Systems" TextColor="White" BackgroundColor="#2a3f54"></Label>
+
+
+        <StackLayout Orientation="Horizontal">
+            <Image x:Name="xaml_imgSetting" Source="Resources/drawable/settings.png" WidthRequest="20"
+                HeightRequest="20"></Image>
+            <Label x:Name="xaml_txtSetting" Text="Settings" TextColor="#424242"></Label>
+        </StackLayout>
+        
+     
+
+
+        <StackLayout Orientation="Horizontal">
+            <Image x:Name="xaml_imgHelp" Source="Resources/drawable/help.png" WidthRequest="20"
+                HeightRequest="20"></Image>
+            <Label x:Name="xaml_txtHelp" Text="help" TextColor="#424242"></Label>
+        </StackLayout>
+
+
+    </StackLayout>
+</ContentPage>
